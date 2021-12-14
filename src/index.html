@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SDP VIEW</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./jsonview.bundle.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: rgb(130, 201, 255);
+            top: 8px;
+            padding: 0;
+        }
+
+        #input {
+            height: 30vh;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .json-container {
+            overflow-x: auto;
+            margin-top: 8px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea placeholder="Paste the SDP text here..." id="input"></textarea>
+    <div class="root" id="json_view_area">
+
+    </div>
+    <h3>About</h3>
+    <ul>
+        <li>A simple tool to display Session Descrition Protocol (SDP) text in a more readable format.</li>
+        <li>All processing is done in your browser</li>
+    </ul>
+    <h4>Tips</h4>
+    <ul>
+        <li>Add a space before a line in the SDP text to hide it from the output.</li>
+        <li>Conversely, any lines begining with whitespace will not parse and won't display in the output.</li>
+    </ul>
+    <h4>What is SDP?</h4>
+    <ul>
+        <li>SDP is found in many Real Time Communication (RTC) protocols like WebRTC. </li>
+        <li><a href="https://en.wikipedia.org/wiki/Session_Description_Protocol">SDP on Wikipedia</a></li>
+    </ul>
+
+    <h4>Credits</h4>
+    <p>
+        This website wouldn't work without <em>sdp-transform</em> (<a
+            href="https://github.com/clux/sdp-transform">https://github.com/clux/sdp-transform</a>),
+        which does the heavy lifting of parsing the SDP,
+        as well as <em>json-view</em> (<a
+            href="https://github.com/pgrabovets/json-view">https://github.com/pgrabovets/json-view</a>)
+        for the display of the parsed SDP.
+
+        <script src="./jsonview.bundle.js"></script>
+        <script type="module" src="./index.js"></script>
+</body>
+
+</html>

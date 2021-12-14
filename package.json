@@ -1,0 +1,18 @@
+{
+  "name": "sdp-view",
+  "version": "1.0.0",
+  "description": "A site for parsing and viewing Session Description Protocols as made by WebRTC and others in a more readable format.",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "KW-M",
+  "license": "ISC",
+  "dependencies": {
+    "sdp-transform": "^2.14.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
