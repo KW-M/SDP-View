@@ -4,8 +4,9 @@
   "description": "A site for parsing and viewing Session Description Protocols as made by WebRTC and others in a more readable format.",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --dist-dir ./docs",
-    "build": "parcel build --dist-dir ./docs"
+    "start": "parcel",
+    "build": "parcel build",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "author": "KW-M",
   "license": "ISC",
